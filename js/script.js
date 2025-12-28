@@ -146,7 +146,7 @@ function loadProductPage() {
                             <li><strong>Availability:</strong> ${isAvailable ? '✅ In Stock' : '❌ Out of Stock'}</li>
                             <li><strong>Shipping:</strong> ${product.details && product.details.shipping ? product.details.shipping : 'N/A'}</li>
                         </ul>
-                        <a href="https://wa.me/9166335565082?text=I want to buy the product: ${encodeURIComponent(product.name || 'Unnamed Product')}" target="_blank" class="buy-now-btn">Buy Now on WhatsApp</a>
+                        <a href="https://wa.me/916633556508?text=I want to buy the product: ${encodeURIComponent(product.name || 'Unnamed Product')}" target="_blank" class="buy-now-btn">Buy Now on WhatsApp</a>
                     </div>
                 </div>
             `;
@@ -163,3 +163,4 @@ function changeImage(newSrc, clickedThumbnail) {
     thumbnails.forEach(thumb => thumb.classList.remove('active'));
     clickedThumbnail.classList.add('active');
 }
+
