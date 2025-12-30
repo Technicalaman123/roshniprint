@@ -1129,7 +1129,7 @@ footer::before {
 
 /* --- Contact Us Section (Glass Design) --- */
 .contact-section {
-    max-width: 900px;
+    max-width: 900px; /* Ise 100px mat karna, 900px perfect hai */
     margin: 60px auto;
     padding: 50px 30px;
     background: rgba(255, 255, 255, 0.7);
@@ -1150,19 +1150,20 @@ footer::before {
 .contact-section p {
     color: #666;
     font-size: 17px;
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Thoda gap badhaya */
     line-height: 1.6;
 }
 
-/* Email & Phone Highlight */
+/* Aapka Favourite Design (Email & Phone Highlight) */
 .contact-section h3 {
-    margin-top: 20px;
+    margin-top: 15px; /* Dono ke beech ka gap */
     font-weight: 700;
     color: #764ba2;
     background: rgba(118, 75, 162, 0.1);
     display: inline-block;
     padding: 10px 25px;
     border-radius: 50px;
+    font-size: 16px; /* Text size adjust kiya */
 }
 
 /* --- Mobile Responsiveness for these sections --- */
@@ -1183,4 +1184,5 @@ footer::before {
     }
 
 }
+
 
