@@ -1154,33 +1154,43 @@ footer::before {
     line-height: 1.6;
 }
 
-/* --- Contact Items Styling (Mobile Friendly) --- */
+/* --- Contact Items Styling (Final Mobile Fix) --- */
 .contact-section h3 {
-    margin-top: 15px;
+    margin: 15px auto;
     font-weight: 700;
     color: #764ba2;
     background: rgba(118, 75, 162, 0.1);
-    display: inline-block;
-    padding: 10px 25px;
+    display: inline-block; /* Desktop par capsule chota rahega */
+    padding: 12px 25px;
     border-radius: 50px;
     font-size: 16px;
+    border: 1px solid rgba(118, 75, 162, 0.2);
     
-    /* --- Naya Code Jo Fix Karega --- */
-    max-width: 90%;          /* Screen se bahar nahi jayega */
-    word-wrap: break-word;   /* Lambi email ko niche bhej dega */
-    overflow-wrap: break-word;
-    line-height: 1.4;        /* Agar wrap ho toh lines chipke na */
+    /* Text break karne ke liye zaroori properties */
+    max-width: 100%;
+    white-space: normal;       /* Line break allow karega */
+    word-break: break-all;     /* Lambe words ko kahin se bhi tod dega */
+    overflow-wrap: break-word; 
 }
 
-/* Mobile ke liye thoda aur chota size */
-@media (max-width: 480px) {
+/* Mobile ke liye special settings */
+@media (max-width: 600px) {
     .contact-section h3 {
-        font-size: 14px;      /* Mobile par font thoda chota */
-        padding: 10px 15px;   /* Padding kam taaki jagah bache */
+        display: block;        /* Mobile par poori width lega taaki text andar wrap ho */
+        font-size: 14px;       /* Thoda chota text */
+        padding: 12px 15px;
+        border-radius: 15px;   /* Zyada text hone par round corner ajeeb lagte hain, isliye thoda kam kiya */
+        margin: 10px 10px;     /* Side se thodi jagah */
     }
     
     .contact-section {
-        padding: 30px 15px;   /* Box ki padding bhi kam kar di */
+        padding: 30px 10px;
+        width: 95%;            /* Box screen ke kinaro se chipke na */
+        margin: 40px auto;
+    }
+
+    .contact-section h2 {
+        font-size: 28px;
     }
 }
 
@@ -1202,6 +1212,7 @@ footer::before {
     }
 
 }
+
 
 
 
