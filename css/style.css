@@ -1155,7 +1155,7 @@ footer::before {
 }
 
 /* Email & Phone Highlight */
-.contact-section p:last-child {
+.contact-section h3 {
     margin-top: 20px;
     font-weight: 700;
     color: #764ba2;
@@ -1181,4 +1181,5 @@ footer::before {
     .contact-section h2 {
         font-size: 28px;
     }
+
 }
